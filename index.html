@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Responsive images test</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="style/style.css">
+	</head>
+	<body>
+		<div class="container">
+
+			<div class="img-wrap-bos">
+				<picture>
+					<source media="(min-width: 2000px)" srcset="img/original/bos.jpg">
+					<source media="(min-width: 1440px)" srcset="img/bos_desktop-large.jpg">
+					<source media="(min-width: 1040px)" srcset="img/bos_desktop-small.jpg">
+					<source media="(min-width: 768px)" srcset="img/bos_tablet.jpg">
+		  			<img src="img/bos_phone.jpg" alt="Een landschap.">
+				</picture>
+				<p class="text">
+					Het standaard stuk van Lorum Ipsum wat sinds de 16e eeuw wordt gebruikt is hieronder, voor wie er interesse in heeft, weergegeven. Secties 1.10.32 en 1.10.33 van "de Finibus Bonorum et Malorum" door Cicero zijn ook weergegeven in hun exacte originele vorm, vergezeld van engelse versies van de 1914 vertaling door H. Rackham.
+				</p>
+			</div>
+
+			<hr>
+			
+			<div class="img-wrap-audi">
+				<img 
+					class="audi" 
+					srcset="img/audi_desktop-large.jpg 1440w, 
+						img/audi_desktop-small.jpg 1040w, 
+						img/audi_tablet.jpg 768w, 
+						img/audi_small.jpg 640w" 
+					src="img/audi_tablet.jpg"
+					sizes="(min-width: 640vw) 640vw, 1440vw" 
+					alt="Een auto.">
+
+				<p class="text">
+					The car is exclusively designed, developed, and manufactured by Audi AG's high performance private subsidiary company, quattro GmbH, and is based on the Lamborghini Gallardo platform.[8] The fundamental construction of the R8 is based on the Audi Space Frame,[3] and uses an aluminium monocoque which is built using space frame principles. The car is built by quattro GmbH in a newly renovated factory at Audi's 'aluminium site' at Neckarsulm in Germany.
+				</p>
+			</div>
+
+			<hr>
+			
+			<div class="img-wrap-viper">
+				<img 
+					class="viper" 
+					srcset="img/viper_desktop-large.png 1440w, 
+						img/viper_desktop-small.png 1040w, 
+						img/viper_tablet.png 768w, 
+						img/viper_phone.png 640w" 
+					src="img/viper_desktop-large.png" 
+					alt="Een slang."
+					sizes="(min-width: 33em) 33em, 100vw">
+				<p class="text">
+					Er zijn vele variaties van passages van Lorem Ipsum beschikbaar maar het merendeel heeft te lijden gehad van wijzigingen in een of andere vorm, door ingevoegde humor of willekeurig gekozen woorden die nog niet half geloofwaardig ogen. Als u een passage uit Lorum Ipsum gaat gebruiken dient u zich ervan te verzekeren dat er niets beschamends midden in de tekst verborgen zit.
+				</p>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
