@@ -31,7 +31,6 @@
 						img/audi_tablet.jpg 768w, 
 						img/audi_small.jpg 640w" 
 					src="img/audi_tablet.jpg"
-					sizes="(min-width: 640vw) 640vw, 1440vw" 
 					alt="Een auto.">
 
 				<p class="text">
@@ -44,13 +43,17 @@
 			<div class="img-wrap-viper">
 				<img 
 					class="viper" 
-					srcset="img/viper_desktop-large.png 1440w, 
-						img/viper_desktop-small.png 1040w, 
+					srcset="img/viper_phone.png 640w, 
 						img/viper_tablet.png 768w, 
-						img/viper_phone.png 640w" 
-					src="img/viper_desktop-large.png" 
-					alt="Een slang."
-					sizes="(min-width: 33em) 33em, 100vw">
+						img/viper_desktop-small.png 1040w, 
+						img/viper_desktop-large.png 1440w" 
+					sizes="(max-width: 640px) 100vw,
+						(max-width: 768px) 33vw,
+						(max-width: 1040px) 50vw,
+						(max-width: 1440px) 25vw,
+						1440px"
+					src="img/viper_desktop-small.png" 
+					alt="Een slang.">
 				<p class="text">
 					Er zijn vele variaties van passages van Lorem Ipsum beschikbaar maar het merendeel heeft te lijden gehad van wijzigingen in een of andere vorm, door ingevoegde humor of willekeurig gekozen woorden die nog niet half geloofwaardig ogen. Als u een passage uit Lorum Ipsum gaat gebruiken dient u zich ervan te verzekeren dat er niets beschamends midden in de tekst verborgen zit.
 				</p>
